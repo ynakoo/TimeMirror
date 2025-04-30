@@ -1,0 +1,107 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    background: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .app-container {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex: 1;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2C3E50;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navbar-links a {
+    color: #E3F2FD;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: white;
+  }
+  
+  .auth-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .login-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .register-btn {
+    padding: 0.5rem 1rem;
+    background-color: #3498DB;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .register-btn:hover {
+    background-color: #2980B9;
+  }
+  
+  /* Rest of your existing styles... */
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980B9;
+  }

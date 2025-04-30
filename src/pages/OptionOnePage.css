@@ -1,0 +1,102 @@
+.option-one-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px 50px;
+    background: linear-gradient(to right, rgb(200, 215, 228));
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    min-height: auto; /* Adjusts height based on content */
+  }
+  
+  /* Heading */
+  .page-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1a1818;
+    margin-bottom: 40px;
+  }
+  
+  /* Form Input Section */
+  .form-section {
+    margin-bottom: 30px;
+  }
+  
+  .text-area {
+    width: 100%;
+    min-height: 130px;
+    padding: 14px;
+    font-size: 17px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    resize: vertical;
+    margin-top: 12px;
+    background-color: #fffefc;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    display: block;
+    background: linear-gradient(to right, #B2EBF2, #008080);
+    color: #fafbfc;
+    padding: 14px 30px;
+    font-size: 17px;
+    margin: 25px auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(to right, #B2EBF2, #008080);
+  }
+  
+  /* Charts Container */
+  .charts-container {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    overflow-x: auto;
+    text-align: center;
+  }
+  
+  /* Layout for Side-by-Side Charts */
+  .chart-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  /* Optional wrapper for individual chart control */
+  .chart-wrapper {
+    flex: 1;
+    min-width: 320px;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Bullet point list for time entries */
+  .chart-wrapper ul {
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #2c3e50;
+    line-height: 1.6;
+  }
+  
+  .chart-wrapper h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  

@@ -1,0 +1,137 @@
+/* LandingPage.css */
+
+/* Main container - centers everything */
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #E3F2FD, #f8f9fa);
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .landing-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  /* Title styling */
+  .landing-title {
+    color: #2C3E50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  /* Description text */
+  .landing-description {
+    color: #456280;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Highlighted words */
+  .highlight {
+    color: #008080;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #B2EBF2;
+  }
+  
+  /* Button container */
+  .action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Base button styles */
+  .primary-btn,
+  .secondary-btn {
+    border: none;
+    padding: 18px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 220px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Primary button */
+  .primary-btn {
+    background: linear-gradient(315deg, #008080 0%, #B2EBF2 74%);
+    color: #2C3E50;
+  }
+  
+  /* Secondary button */
+  .secondary-btn {
+    background: linear-gradient(315deg, #B2EBF2 0%, #008080 74%);
+    color: white;
+  }
+  
+  /* Hover effects */
+  .primary-btn:hover,
+  .secondary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 128, 128, 0.3);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .landing-card {
+      padding: 30px;
+    }
+    
+    .landing-title {
+      font-size: 2rem;
+    }
+    
+    .landing-description {
+      font-size: 1rem;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .primary-btn,
+    .secondary-btn {
+      width: 100%;
+      padding: 15px;
+    }
+  }
